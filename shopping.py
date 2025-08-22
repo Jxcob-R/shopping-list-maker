@@ -15,6 +15,8 @@ class Unit(Enum):
     PINCH = 4
 
 
+# TODO: Make these objects more JSON compatible -- this may require some
+# annotations/modifiers
 class IngredientQty:
     """
     Classify data about the quantity required of a certain ingredient and a
@@ -54,4 +56,4 @@ def choose_ingredients(days: int, recipes_path: str, ing_path: str) -> List[Reci
     """
     # FIXME: Dummy data for now (this is for a simple stub)
     return [Recipe("Butter Chicken", [IngredientQty("Chicken", 2000, Unit.GRAMS,
-                                                   12)])]
+                                                    12)])]
